@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalyzeActivity">
+    <TextView
+        android:id="@+id/heatmapTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correlation Heatmap"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heatmapTV"
+        android:padding="5dp"
+        android:id="@+id/simpleGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_below="@+id/simpleGridView"
+        android:id="@+id/meanTV"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        />
+    <TextView
+        android:layout_below="@+id/meanTV"
+        android:id="@+id/thresholdTV"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:text="Coeffecient Threshold: 0.5"
+        />
+    <TextView
+        android:layout_below="@+id/thresholdTV"
+        android:id="@+id/hypothesisTV"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        />
+</RelativeLayout>
